@@ -394,6 +394,11 @@ body{
     position: relative;
 }
 
+.php-bar{
+    width: 10%;
+    position: relative;
+}
+
 /* PROJECT */
 
 .project-body .main-wrapper{

@@ -1,6 +1,7 @@
 //MENU
 let menuOpenAudio = new Audio('../SOUND/DCDon.wav');
 let menuClosedAudio = new Audio('../SOUND/DCDoff.wav');
+let menuSelectAudio = new Audio("../SOUND/menuSelect.wav");
 
 menuClosedAudio.loop = false;
 menuOpenAudio.loop = false;
@@ -12,6 +13,12 @@ const menuAll = document.querySelector(".menu-button");
 const menuButton = document.querySelector("#menu-logo");
 const circle = document.querySelector(".circle");
 let isMenuOpen = false;
+
+function playhover(){
+    menuSelectAudio = new Audio("../SOUND/menuSelect.wav");
+    menuSelectAudio.play();
+}
+
 
 if(circle != null){
     circle.addEventListener("mouseover", () => {

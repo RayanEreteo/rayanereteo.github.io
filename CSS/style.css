@@ -399,6 +399,11 @@ body{
     position: relative;
 }
 
+.sql-bar{
+    width: 5%;
+    position: relative;
+}
+
 /* PROJECT */
 
 .project-body .main-wrapper{

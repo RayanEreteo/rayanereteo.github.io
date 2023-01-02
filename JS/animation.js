@@ -1,11 +1,4 @@
 //MENU
-let menuOpenAudio = new Audio('../SOUND/DCDon.wav');
-let menuClosedAudio = new Audio('../SOUND/DCDoff.wav');
-let menuSelectAudio = new Audio("../SOUND/menuSelect.wav");
-
-menuClosedAudio.loop = false;
-menuOpenAudio.loop = false;
-
 const menu = document.querySelector(".menu-closed");
 const exitMenu = document.querySelector(".quit-menu");
 const exitMenuMobile = document.querySelector(".quit-menu-mobile");
@@ -14,12 +7,6 @@ const menuButton = document.querySelector("#menu-logo");
 const circle = document.querySelector(".circle");
 let isMenuOpen = false;
 
-function playhover(){
-    menuSelectAudio = new Audio("../SOUND/menuSelect.wav");
-    menuSelectAudio.play();
-}
-
-
 if(circle != null){
     circle.addEventListener("mouseover", () => {
         circle.style.display = "none";
@@ -27,15 +14,11 @@ if(circle != null){
 }
 
 menuButton.addEventListener('click', (event) => {
-    menuOpenAudio = new Audio("../SOUND/DCDon.wav");
-    menuOpenAudio.play();
     event.stopPropagation();
     toggleMenu();
 })
 
 exitMenu.addEventListener("click", (e) => {
-    menuClosedAudio = new Audio("../SOUND/DCDoff.wav");
-    menuClosedAudio.play();
     e.stopPropagation()
     if(isMenuOpen){
         toggleMenu();
@@ -43,7 +26,6 @@ exitMenu.addEventListener("click", (e) => {
 });
 
 exitMenuMobile.addEventListener("click", (e) => {
-    menuClosedAudio.play();
     e.stopPropagation()
     if(isMenuOpen){
         toggleMenu();

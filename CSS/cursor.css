@@ -13,7 +13,7 @@ body{
     background: black;
     position: absolute;
     pointer-events: none;
-    transition: all 100ms ease-out;
+    transition: all 50ms ease-out;
     z-index: 99;
 }
 

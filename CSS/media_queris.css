@@ -74,7 +74,7 @@
 /* PROJECT */
 
 @media screen and (max-width: 1000px){
-    .projects-wrapper{
+    .vanilla-js-projects{
         flex-direction: column;
     }
 

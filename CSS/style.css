@@ -11,8 +11,7 @@ html{
 
 body{
     background: #22252A;
-    overflow: hidden;
-    overflow-y: hidden;
+    overflow: hidden;   
 }
 
 /* INDEX */
@@ -245,6 +244,7 @@ body{
 
 .rule{
     margin-top: 50px;
+    margin-bottom: 50px;
     opacity: 0;
     animation: rulescaling 1s forwards 1.5s;
 }
@@ -404,6 +404,16 @@ body{
     position: relative;
 }
 
+.laravel-bar{
+    width: 0%;
+    position: relative;
+}
+
+.symfony-bar{
+    width: 0%;
+    position: relative;
+}
+
 /* PROJECT */
 
 .project-body .main-wrapper{
@@ -418,7 +428,7 @@ body{
     filter: invert(100%) sepia(0%) saturate(1187%) hue-rotate(193deg) brightness(111%) contrast(100%);
 }
 
-.projects-wrapper{
+.js-projects {
     margin-top: 50px;
     text-align: center;
     display: flex;
@@ -492,6 +502,17 @@ body{
 .project-animated{
     animation: downtoup 0.5s forwards;
     pointer-events: all;
+}
+
+.project-category-title{
+    font-size: 1.3rem;
+    color: white;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: underline;
+    opacity: 0;
+    transition: all 0.5s ease-out;
 }
 
 #bottom-text{
@@ -582,4 +603,20 @@ body{
     100%{
         transform: translateY(1080px);
     }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }

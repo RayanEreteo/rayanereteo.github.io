@@ -129,3 +129,10 @@ setTimeout(() => {
     }
 }, 500)
 }, 2000);
+
+setTimeout(() => {
+    let title = document.getElementsByClassName("project-category-title");
+    for(i=0; i < title.length; i++){
+        title[i].style.opacity = 1;
+    }
+}, 2000)

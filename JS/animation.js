@@ -54,7 +54,9 @@ const welcomeMessage = document.querySelector(".main");
 const whiteFrame = document.querySelector('.title-frame');
 
 setTimeout(() => {
-    whiteFrame.style.display = 'none';
+    if(whiteFrame != null){
+        whiteFrame.style.display = "none";
+    }
 }, 5000)
 
 if(title != null){
@@ -120,7 +122,7 @@ let index = -1;
 setTimeout(() => {
     let timer = setInterval(() => {
         if(projects != null){
-            if (index <= 2) {
+            if (index <= 3) {
                 index++;
                 projects[index].classList.add("project-animated");
             } else {
